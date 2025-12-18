@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libreria Luz</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1>📚 Libreria Luz</h1>
+        <a href="/Registro/index.html" target="_blank" class="logo-link">
+          Registro
+        </a>
+
+        <div class="search">
+          <h1>Buscar Libros</h1>
+          <input
+            type="text"
+            id="busqueda"
+            placeholder="Buscar por título o autor"
+          />
+          <button onclick="buscarLibro()">Buscar</button>
+        </div>
+        <button class="cart-btn" onclick="toggleCart()">
+          🛒 Comprar (<span id="cart-count">0</span>)
+        </button>
+      </div>
+
+      <div id="resultados"></div>
+    </header>
+
+
+
+          </div>
+        </div>
+
+       
+      </div>
+      <h2 class="section-title">Nuestros Libros</h2>
+      <div class="products-grid" id="products-grid">
+
+    <!-- Productos -->
+    <main class="container">
+    
+        <!-- Los productos se cargan con JavaScript -->
+      </div>
+    </main>
+
+    <!-- Carrito (Sidebar) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <button class="close-btn" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Los items del carrito se cargan con JavaScript -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">0.00 €</span>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">
+          Finalizar Compra
+        </button>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p class="footer-title">
+        <span class="icon-cise">🏆</span> Proyecto Educativo - CISE
+      </p>
+      <p class="footer-subtitle">
+        Ejemplo de e-commerce con HTML, CSS y JavaScript
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
